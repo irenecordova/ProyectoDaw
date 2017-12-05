@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+		<meta charset="UTF-8">
+		<title>Albergues</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Página web para la búsqueda de mascotas">
+		<meta name="author" content="Allan Alarcón - Irene Córdova">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Boogaloo|Loved+by+the+King|Pacifico" rel="stylesheet">
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="#">Salvando Huellitas</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Inicio</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="agregar-mascota.html">Agregar mascota</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="mapa.html">Ver Mapa</a>
+				</li>
+				<li class="nav-item">
+						<a class="nav-link" href="denuncia.html">Denuncias</a>
+					</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="albergues.html">Albergues<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="eventos.html">Noticias y Eventos</a>
+				</li>
+			</ul>
+			<img src="img/hombre.jpg" id="icono" class="img-responsive" alt="">     
+        <a href="perfil.html" class="btn btn-danger btn-md" role="button">Allan Alarcón</a>
+        <img src="img/apagado.png" id="icono" class="img-responsive" alt="">
+		</div>
+	</nav>
+
+	<div id=imagenprincipal class="jumbotron">
+      <div class="container" id="portada">
+        <h1>Albergues</h1>
+      </div>
+    </div>
+
+     <div class="card text-center" id="subtitulo"> 
+	  <div class="card-body">
+	    <h4 class="card-title">Aquí podrás consultar la información de albergues</h4>
+	  </div>
+	</div>
+    
+	<div class="text-center">
+		<div class="row">
+	        <div class="col-lg-6">
+	          <img class="rounded-circle" src="img/amigos-con-cola.jpg" alt="Generic placeholder image" width="140" height="140">
+	          <h2>Amigos con cola</h2>
+	          <p><a class="btn btn-default" href="http://amigosconcola.blogspot.com/" role="button">Ir a página web &raquo;</a></p>
+	        </div>
+	        <div class="col-lg-6">
+	          <img class="rounded-circle" src="img/Fauna-Urbana-Callejera-Guayaquil.jpg" alt="Generic placeholder image" width="140" height="140">
+	          <h2>Fauna urbana Callejera</h2>
+	          <p><a class="btn btn-default" href="https://www.facebook.com/cinelirosales/" role="button">Ir a página web &raquo;</a></p>
+	        </div>
+	        <div class="col-lg-6">
+	          <img class="rounded-circle" src="img/rescate-animal.jpg" alt="Generic placeholder image" width="140" height="140">
+	          <h2>Rescate Animal</h2>
+	          <p><a class="btn btn-default" href="http://www.rescateanimal.org.ec/" role="button">Ir a página web &raquo;</a></p>
+	        </div>
+	        <div class="col-lg-6">
+	          <img class="rounded-circle" src="img/yo-amo-a-los-animales.jpg" alt="Generic placeholder image" width="140" height="140">
+	          <h2>Yo amo a los animales</h2>
+	          <p><a class="btn btn-default" href="https://www.facebook.com/Fundacionyoamoanimalesec/" role="button">Ir a página web &raquo;</a></p>
+	        </div>
+	    </div>
+    </div>
+
+    <footer class="text-center" id="footer">
+		<p> © Todos los Derechos Reservados </p>
+	</footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQCSUuzO4bdYjEDa_768ze5zFRD4dYtrU&callback=myMap"></script>
+</body>
+</html>
