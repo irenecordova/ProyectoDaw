@@ -1,111 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-  		<meta charset="UTF-8">
-  		<title>Mascotas</title>
-  		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-  		<meta name="viewport" content="width=device-width, initial-scale=1">
-  		<meta name="description" content="Página web para la búsqueda de mascotas">
-  		<meta name="author" content="Allan Alarcón - Irene Córdova">
+	<head>
+		<meta charset="UTF-8">
+		<title>Albergues</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Página web para la búsqueda de mascotas">
+		<meta name="author" content="Allan Alarcón - Irene Córdova">
 
-  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-  		<link rel="stylesheet" type="text/css" href="css/style.css">
-  		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-  		<link href="https://fonts.googleapis.com/css?family=Boogaloo|Loved+by+the+King|Pacifico" rel="stylesheet">
-      <link href="./Dashboard Template for Bootstrap_files/dashboard.css" rel="stylesheet">
-  </head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
-  <body>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Boogaloo|Loved+by+the+King|Pacifico" rel="stylesheet">
+	</head>
 
-  	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  		<a class="navbar-brand" href="#">Mascotas</a>
-  		<button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-  			<span class="navbar-toggler-icon"></span>
-  		</button>
-  		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
-  			<ul class="navbar-nav mr-auto">
-  				<li class="nav-item active">
-  					<a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
-  				</li>
-  				<li class="nav-item">
-  					<a class="nav-link" href="agregar-mascota.html">Agregar mascota</a>
-  				</li>
-  				<li class="nav-item">
-  					<a class="nav-link" href="mapa.html">Ver Mapa</a>
-  				</li>
-          <li class="nav-item">
-            <a class="nav-link" href="denuncia.html">Denuncias</a>
-          </li>
-  				<li class="nav-item">
-  					<a class="nav-link" href="albergues.html">Albergues</a>
-  				</li>
-  				<li class="nav-item">
-  					<a class="nav-link" href="eventos.html">Noticias y Eventos</a>
-  				</li>
-  			</ul>
-        <img src="img/hombre.jpg" id="icono" class="img-responsive" alt="">     
-        <a href="perfil.html" class="btn btn-danger btn-md" role="button">Allan Alarcón</a>
-        <img src="img/apagado.png" id="icono" class="img-responsive" alt="">      
-  		</div>
-  	</nav>
+	<body>
+		<!-- Barra de navegación-->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="#">Salvando Huellitas</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="agregar-mascota.html">Agregar mascota</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="mapa.html">Ver Mapa</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="denuncia.html">Denuncias<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="albergues.html">Albergues</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="eventos.html">Noticias y Eventos</a>
+					</li>
+				</ul>
+				<img src="img/hombre.jpg" id="icono" class="img-responsive" alt="">     
+		        <a href="perfil.html" class="btn btn-danger btn-md" role="button">Allan Alarcón</a>
+		        <img src="img/apagado.png" id="icono" class="img-responsive" alt="">
+			</div>
+		</nav>
 
-  	<div id=imagenprincipal class="jumbotron">
-      <div class="container" id="portada">
-        <h1>Denuncias</h1>
-      </div>
-    </div>
+		<!-- Portada-->
+		<div id=imagenprincipal class="jumbotron">
+			<div class="container" id="portada">
+				<h1>Denuncias</h1>
+			</div>
+		</div>
 
-     <div class="card text-center" id="subtitulo"> 
-    <div class="card-body">
-      <h4 class="card-title">Denuncia el maltrato animal</h4>
-    </div>
-  </div>
-    
-  
-    <div class="row">
-        <div class="col-lg-12">          
-          <p id="introduccion">No podemos permanecer impasibles ante el maltrato animal. Si has presenciado un caso de maltrato animal, o sabes de una situación en la que se esté produciendo, es necesario que lo denuncies.</p>
-        </div>
-    </div>
+		<!-- Descripción de la página-->
+		<div class="card text-center" id="subtitulo"> 
+			<div class="card-body">
+				<h4 class="card-title">Denuncia el maltrato animal</h4>
+			</div>
+		</div>
 
-    <div class="container marketing">
-          <div class="row">
-            <div class="col-lg-4" id="pasos">
-              <img class="rounded-circle" src="img/libro.png" alt="Generic placeholder image" width="140" height="140">
-              <h2>¿Qué se puede denunciar?</h2>
-              <p id="texto1">1. Maltrato o muerte de mascotas o animales de compañía. </br>2. La persona que haga participar perros, los entrene, organice, promocione o programe peleas entre ellos.</p>
-              <img class="image-responsive" src="img/1.jpg" alt="Generic placeholder image" width="350" height="350">
-            </div>  
-            <div class="col-lg-4" id="pasos">
-              <img class="rounded-circle" src="img/equipo.png" alt="Generic placeholder image" width="140" height="140">
-              <h2>¿Quién puede denunciar?</h2>
-              <p id="texto1">Cualquier ciudadano puede denunciar un caso de maltrato animal si tiene constancia del mismo.</p>
-              <img class="image-responsive" src="img/persona.png" alt="Generic placeholder image" width="350" height="350">
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4" id="pasos">
-              <img class="rounded-circle" src="img/escritura.png" alt="Generic placeholder image" width="140" height="140">
-              <h2>¿Cómo denunciar?</h2>
-              <p id="texto1">La autoridad competente para receptar denuncias, según la ordenanza de protección a los animales de compañía de Guayaquil, es el Municipio.</p>
-              <img class="image-responsive" src="img/2.jpg" alt="Generic placeholder image" width="350" height="350">
-            </div><!-- /.col-lg-4 -->
-          </div>
-      </div>
-    </div>
-    
-    <div class="row">
-        <div class="col-lg-12">          
-          <p id="introduccion">Formato de denuncias por maltrato animal, vía COIP.<a class="btn btn-default btn-lg" href="http://www.rescateanimal.org.ec/wp-content/uploads/2015/12/Formato-denuncia-COIP.pdf" role="button">Aquí &raquo;</a></p>
-        </div>
-    </div>
-     
+		<!-- Información-->
+		<div class="row">
+			<div class="col-lg-12">          
+				<p id="introduccion">No podemos permanecer impasibles ante el maltrato animal. Si has presenciado un caso de maltrato animal, o sabes de una situación en la que se esté produciendo, es necesario que lo denuncies.</p>
+			</div>
+		</div>
 
-      <footer class="text-center" id="footer">
-  		<p> © Todos los Derechos Reservados </p>
-  	</footer>
-    
+		<div class="container marketing">
+			<div class="row">
+				<div class="col-lg-4" id="pasos">
+					<img class="rounded-circle" src="img/libro.png" alt="Generic placeholder image" width="140" height="140">
+					<h2>¿Qué se puede denunciar?</h2>
+					<p id="texto1">1. Maltrato o muerte de mascotas o animales de compañía.</br>2. La persona que haga participar perros, los entrene, organice, promocione o programe peleas entre ellos.</p>
+					<img class="image-responsive" src="img/1.jpg" alt="Generic placeholder image" width="350" height="350">
+				</div>  
+				<div class="col-lg-4" id="pasos">
+					<img class="rounded-circle" src="img/equipo.png" alt="Generic placeholder image" width="140" height="140">
+					<h2>¿Quién puede denunciar?</h2>
+					<p id="texto1">Cualquier ciudadano puede denunciar un caso de maltrato animal si tiene constancia del mismo.</p>
+					<img class="image-responsive" src="img/persona.png" alt="Generic placeholder image" width="350" height="350">
+				</div><!-- /.col-lg-4 -->
+				<div class="col-lg-4" id="pasos">
+					<img class="rounded-circle" src="img/escritura.png" alt="Generic placeholder image" width="140" height="140">
+					<h2>¿Cómo denunciar?</h2>
+					<p id="texto1">La autoridad competente para receptar denuncias, según la ordenanza de protección a los animales de compañía de Guayaquil, es el Municipio.</p>
+					<img class="image-responsive" src="img/2.jpg" alt="Generic placeholder image" width="350" height="350">
+				</div>				
+			</div>
+		</div>
 
-  	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+		<!-- Formato de denuncia-->
+		<div class="row">
+			<div class="col-lg-12">          
+				<p id="introduccion">Formato de denuncias por maltrato animal, vía COIP.<a class="btn btn-default btn-lg" href="http://www.rescateanimal.org.ec/wp-content/uploads/2015/12/Formato-denuncia-COIP.pdf" role="button">Aquí &raquo;</a></p>
+			</div>
+		</div>
+
+		<!-- Pié de página-->
+		<footer class="text-center" id="footer">
+			<p> © Todos los Derechos Reservados </p>
+		</footer>
+
+		<!-- Scrip Boopstrap-->
+	    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
 	</body>
 </html>
