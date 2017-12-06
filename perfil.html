@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+			<meta charset="UTF-8">
+			<title>Perfil</title>
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<meta name="description" content="Página web para la búsqueda de mascotas">
+			<meta name="author" content="Allan Alarcón - Irene Córdova">
+
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+			<link rel="stylesheet" type="text/css" href="css/style.css">
+			<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Boogaloo|Loved+by+the+King|Pacifico" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="#">Salvando Huellitas</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="agregar-mascota.html">Agregar mascota</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="mapa.html">Ver Mapa</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="denuncia.html">Denuncias</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="albergues.html">Albergues<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="eventos.html">Noticias y Eventos</a>
+					</li>					
+				</ul>
+				<img src="img/hombre.jpg" id="icono" class="img-responsive" alt="">     
+        <a href="perfil.html" class="btn btn-danger btn-md" role="button">Allan Alarcón</a>
+        <img src="img/apagado.png" id="icono" class="img-responsive" alt="">
+			</div>
+		</nav>
+
+		<div id=imagenprincipal class="jumbotron">
+	      <div class="container" id="portada">
+	        <h1>Perfil</h1>
+	      </div>
+	    </div>
+
+	     <div class="card text-center" id="subtitulo"> 
+		  <div class="card-body">
+		    <h4 class="card-title">Información del usuario</h4>
+		  </div>
+		</div>
+	    
+		<div class="container">
+		    <div class="row profile">
+				<div class="col-md-3">
+					<div class="profile-sidebar">						
+						<div class="profile-userpic text-center">
+							<img src="img/hombre.jpg" class="img-responsive" alt="">
+						</div>
+						
+						<div class="profile-usertitle">
+							<div class="profile-usertitle-name">
+								Allan Alarcón
+							</div>					
+							<input type="submit" id="configuracion" class="btn btn-light" value="    ">		
+						</div>						
+					</div>
+				</div>
+				<div class="col-md-9 text-center">					
+		            <blockquote>		            	
+		                <p>Allan Alarcón</p> <small><cite title="Source Title">Guayaquil, Ecuador</cite></small><img src="img/marcador-de-posicion.png" id="icono" class="img-responsive" alt="">
+		            </blockquote>
+		            <p> 0996001375 <img src="img/telefono.png" id="icono" class="img-responsive" alt="">		          
+		                <br />
+		            	samuel.alarcon@outlook.com <img src="img/email.png" id="icono" class="img-responsive" alt="">		          
+		                <br />Junio 6, 1996  <img src="img/regalo.png" id="icono" class="img-responsive" alt=""></p>
+		        </div>
+			</div>
+		</div>
+
+		<div class="row" id="panel">
+		  <div class="col-4">
+		    <div class="list-group" id="list-tab" role="tablist">
+		      <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Mascotas</a>
+		      <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Agregar mascota a mi perfil</a>
+		      <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Contacto</a>
+		    </div>
+		  </div>
+		  <div class="col-8">
+		    <div class="tab-content" id="nav-tabContent">
+		      	<div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+		      		<div class="row">
+	  					<div class="col-sm-6">
+				      		<div class="card text-center" style="width: 20rem;">
+				      		  <input type="submit" id="configuracion" class="btn btn-light" value="    ">			      		
+							  <img class="card-img-top" id="imgMascota" src="img/mascota1.jpeg" alt="Card image cap">
+							  <div class="card-body">
+							    <p class="card-text"><img src="img/perro.png" id="perro" class="img-responsive" alt="">  Batman</p>
+							    <p class="card-text">Macho</p>
+							    <p class="card-text">Desripción: Schnauzer Mediano de color Pimienta, edad: 1 año</p>
+							    <a href="#" id="button" class="btn btn-danger btn-lg" role="button">¡Se perdió mi mascota!</a>
+							  </div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+				      		<div class="card text-center" style="width: 20rem;">
+				      		  <input type="submit" id="configuracion" class="btn btn-light" value="    ">
+							  <img class="card-img-top" id="imgMascota" src="img/mascota1.jpeg" alt="Card image cap">
+							  <div class="card-body">
+							    <p class="card-text"><img src="img/gato.png" id="gato" class="img-responsive" alt="">  Matt</p>
+							    <p class="card-text">Macho</p>
+							    <p class="card-text">Descripción: Mestizo de color Amarillo con blanco, edad: 1 año</p>
+							    <a href="#" id="button" class="btn btn-danger btn-lg" role="button">¡Se perdió mi mascota!</a>
+							  </div>
+							</div>
+						</div>
+					</div>
+		      	</div>
+		      	<div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+			      	<form id="form2">
+					  <div class="form-group row">
+					    <label for="inputName" class="col-sm-4 col-form-label"><strong>Nombre de la Mascota</strong></label>
+					    <div class="col-sm-8">
+					      <input type="text" class="form-control" id="inputName" placeholder="Nombre">
+					    </div>
+					  </div>					  
+					  <fieldset class="form-group">
+					    <div class="row"> 
+					      <legend class="col-form-legend col-sm-4"><strong>Sexo</strong></legend>
+					      <div class="col-sm-8">
+					        <div class="form-check">
+					          <label class="form-check-label">
+					            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+					            Macho
+					          </label>
+					        </div>
+					        <div class="form-check">
+					          <label class="form-check-label">
+					            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+					            Hembra
+					          </label>
+					        </div>
+					      </div>
+					    </div>
+					  </fieldset>
+					  <div class="form-group row">
+					    <label for="inputDescripcion" class="col-sm-4 col-form-label"><strong>Descripción</strong></label>
+					    <div class="col-sm-8">
+					      <textarea class="form-control" id="inputDescripcion" rows="3" placeholder="Descripción"></textarea>
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <label for="exampleInputFile"><strong>Imagen de la mascota</strong></label>
+					    <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">					    
+					  </div>					  
+					  <div class="form-group row">
+					    <div class="col-sm-4"></div>
+					    <div class="col-sm-8">
+					      <div class="form-check">
+					        <label class="form-check-label">
+					          <input class="form-check-input" required type="checkbox"> Acepto los términos y condiciones
+					        </label>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="form-group row">
+					    <div class="col-sm-12 text-center">
+					      <button type="submit" class="btn btn-primary">Enviar</button>
+					    </div>
+					  </div>
+					</form>
+				</div>
+		      	<div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+		      		<form id = form1>
+		      			
+						<div class="form-group row">
+							 <h3><span class="col-md-1 col-md-offset-2 text-center glyphicon glyphicon-user"></span></h3>	
+							<div class="col-sm-8">
+								<input type="text" class="form-control" id="inputName" placeholder="Nombres y Apellidos">
+							</div>
+						</div>
+
+						<div class="form-group row">
+							 <h3><span class="col-md-1 col-md-offset-2 text-center glyphicon glyphicon-envelope"></span></h3>	
+							<div class="col-sm-8">
+								<input type="email" class="form-control" id="inputEmail" placeholder="E-mail">
+							</div>
+						</div>
+						
+						<div class="form-group row">
+							 <h3><span class="col-md-1 col-md-offset-2 text-center glyphicon glyphicon-phone"></span></h3>	
+							<div class="col-sm-8">
+								<input type="tel" class="form-control" id="inputTelefono" placeholder="Telefono">
+							</div>
+						</div>
+
+						<div class="form-group row">
+							 <h3><span class="col-md-1 col-md-offset-2 text-center glyphicon glyphicon-send"></span></h3>	
+							<div class="col-sm-8">
+								<textarea class="form-control" id="inputDescripcion" rows="3" placeholder="Mensaje"></textarea>
+							</div>
+						</div>					
+						
+						<div class="form-group row">
+							<div class="col-sm-12 text-center">
+						  		<button type="submit" class="btn btn-danger">Enviar</button>
+							</div>
+						</div>
+					</form>
+		      	</div>
+		    </div>
+		  </div>
+		</div>
+
+
+	    <footer class="text-center" id="footer">
+			<p> © Todos los Derechos Reservados </p>
+		</footer>
+
+	    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQCSUuzO4bdYjEDa_768ze5zFRD4dYtrU&callback=myMap"></script>
+	</body>
+</html>
