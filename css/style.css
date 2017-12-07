@@ -43,6 +43,7 @@ div#imagenprincipal {
 	padding-left: 25%;
 	padding-right: 25%;
 }
+
 #primero{
 	margin-bottom: 5%;
 	text-align: center;
@@ -175,13 +176,9 @@ h4, h2, #p1, #p2, #p3{
 	padding-right: 20%;
 }
 
-#form1{
-	padding-left: 5%;
-	padding-right: 5%;
-}
-
 #panel{
-	padding-left: 5%;
+	padding-left: 8%;
+	padding-right: 8%;
 	margin-right: 0%;
 }
 
@@ -314,47 +311,14 @@ footer{
 	margin: 0%;
 }
 
-@media screen and (max-width: 767px) {
-  .row-offcanvas {
-    position: relative;
-    transition: all .25s ease-out;
-  }
+#form1{
+	margin: 0%;
+}
 
-  .row-offcanvas-right {
-    right: 0;
-  }
-
-  .row-offcanvas-left {
-    left: 0;
-  }
-
-  .row-offcanvas-right .sidebar-offcanvas {
-    right: -100%; /* 12 columns */
-  }
-
-  .row-offcanvas-right.active .sidebar-offcanvas {
-    right: -50%; /* 6 columns */
-  }
-
-  .row-offcanvas-left .sidebar-offcanvas {
-    left: -100%; /* 12 columns */
-  }
-
-  .row-offcanvas-left.active .sidebar-offcanvas {
-    left: -50%; /* 6 columns */
-  }
-
-  .row-offcanvas-right.active {
-    right: 50%; /* 6 columns */
-  }
-
-  .row-offcanvas-left.active {
-    left: 50%; /* 6 columns */
-  }
-
-  .sidebar-offcanvas {
-    position: absolute;
-    top: 0;
-    width: 50%; /* 6 columns */
-  }
+@media screen and (min-width: 480px) {
+    #form1{
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 5%;
+	}
 }
