@@ -325,3 +325,8 @@ footer{
 #preguntas{
 	border-color: #D53030;
 }
+
+#googleMap {
+	width: 85%;
+	height: 520px;
+}

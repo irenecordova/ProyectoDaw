@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head>
-			<meta charset="UTF-8">
-			<title>Ver Mapa</title>
-			<meta http-equiv="X-UA-Compatible" content="IE=edge">
-			<meta name="viewport" content="width=device-width, initial-scale=1">
-			<meta name="description" content="Página web para la búsqueda de mascotas">
-			<meta name="author" content="Allan Alarcón - Irene Córdova">
+		<meta charset="UTF-8">
+		<title>Ver Mapa</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Página web para la búsqueda de mascotas">
+		<meta name="author" content="Allan Alarcón - Irene Córdova">
 
-			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-			<link rel="stylesheet" type="text/css" href="css/galeriaStyle.css">
-			<link rel="stylesheet" type="text/css" href="css/style.css">
-			<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-			<link href="https://fonts.googleapis.com/css?family=Boogaloo|Loved+by+the+King|Pacifico" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/galeriaStyle.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Boogaloo|Loved+by+the+King|Pacifico" rel="stylesheet">
 	</head>
 
 	<body>
 		<!-- Barra de navegación-->
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<a class="navbar-brand" href="#">Salvando Huellitas</a>
+			<a class="navbar-brand" href="index.html">Salvando Huellitas</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -67,10 +67,10 @@
 
 			<div class="col-4">
 				<div class="list-group" id="list-tab" role="tablist">
-					<a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Mapa</a>
-					<a class="list-group-item list-group-item-action" id="list-mapa-list" data-toggle="list" href="#list-mapa" role="tab" aria-controls="mapa">Agregar mascota</a>
-					<a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Ver galería</a>
-					<a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Ver estadísticas</a>
+					<a class="list-group-item list-group-item-action active" id="list-mapa-list" data-toggle="list" href="#list-mapa" role="tab" aria-controls="mapa">Mapa</a>
+					<a class="list-group-item list-group-item-action" id="list-add-list" data-toggle="list" href="#list-add" role="tab" aria-controls="add">Agregar mascota</a>
+					<a class="list-group-item list-group-item-action" id="list-galeria-list" data-toggle="list" href="#list-galeria" role="tab" aria-controls="galeria">Galería</a>
+					<a class="list-group-item list-group-item-action" id="list-estadistica-list" data-toggle="list" href="#list-estadistica" role="tab" aria-controls="estadistica">Estadísticas</a>
 				</div>
 			</div>
 
@@ -78,21 +78,18 @@
 			    <div class="tab-content" id="nav-tabContent">
 
 			    	<!-- Mapa-->
-			    	<div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+			    	<div class="tab-pane fade show active" id="list-mapa" role="tabpanel" aria-labelledby="list-mapa-list">
 			      		<div class="row row-offcanvas row-offcanvas-right" id="cuerpo">
 					    	<div class="col-12 col-md-9">
-					    		<p class="float-right d-md-none">
-						        	<button type="button" class="btn btn-primary btn-sm" data-toggle="offcanvas">Toggle nav</button>
-						        </p>
 								<div class="container">	
-									<div id="googleMap" style="width:80%;height:520px;"></div>
+									<div id="googleMap"></div>
 								</div>
 							</div>						
 						</div>
 			      	</div>
 
 			      	<!-- Formulario-->
-			      	<div class="tab-pane fade" id="list-mapa" role="tabpanel" aria-labelledby="list-mapa-list">
+			      	<div class="tab-pane fade" id="list-add" role="tabpanel" aria-labelledby="list-add-list">
 		      			<form id="form2">
 							<div class="form-group row">
 							    <label for="inputName" class="col-sm-4 col-form-label">Nombre de la Mascota</label>
@@ -170,7 +167,7 @@
 			      	</div>
 
 			      	<!-- Galería-->
-			      	<div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+			      	<div class="tab-pane fade" id="list-galeria" role="tabpanel" aria-labelledby="list-galeria-list">
 				      	<div class="wrapper">
 							<div class="column">
 								<div class="inner"></div>
@@ -212,7 +209,7 @@
 					</div>
 
 					<!-- Estadísticas-->
-			      	<div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+			      	<div class="tab-pane fade" id="list-estadistica" role="tabpanel" aria-labelledby="list-estadistica-list">
 			      		<div id='dashboard'>
 			      		</div>
 					</div>			

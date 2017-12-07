@@ -1,0 +1,9 @@
+{
+	"perros": {"Batman": {"edad":"1 año","sexo":"Macho", "raza":"Schnauzer", "descripcion":"Pelaje gris. Buen estado.",
+						"contacto":"0981509598", "direccion":"Mucho Lote Mz. 2512 V. 12", "latitud":"-2.090706",
+						"longitud":"-79.91868", "tipo":"img/icon-dog.png", "imagen":"img/mascota1.jpeg", "ciudad":"Guayaquil"},
+				"Trini": {"edad":"2 años","sexo":"Hembra", "raza":"Husky siberiana", "descripcion":"Tiene todas las vacunas. En buen estado, juguetona, cari&ntildeosa y d&oacutecil.",
+						"contacto":"0996764741", "direccion":"Los Ceibos Ave 44 NO", "latitud":"-2.160008",
+						"longitud":"-79.938905", "tipo":"img/icon-dog.png", "imagen":"img/mascota1.jpg"}
+			 	}
+}
