@@ -211,6 +211,7 @@ h4, h2, #p1, #p2, #p3{
 
 #panel{
 	padding-left: 5%;
+	margin-right: 0%;
 }
 
 #footer{
@@ -310,6 +311,7 @@ footer{
 
 #form2{
 	margin-right: 10%;
+	margin-left: 0%;
 }
 
 #introduccion{
@@ -329,4 +331,14 @@ footer{
 #googleMap {
 	width: 85%;
 	height: 520px;
+}
+
+#galeria, #list-estadistica{
+	margin-left: -10%;
+	margin-right: 0%;
+	padding-right: 0%;
+}
+
+#contenido,{
+	margin: 0%;
 }

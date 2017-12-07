@@ -25,8 +25,8 @@ function dashboard(id, fData){
 		    // function to handle histogram.
 		    function histoGram(fD){
 		        var hG={},    hGDim = {t: 60, r: 0, b: 30, l: 0};
-		        hGDim.w = 500 - hGDim.l - hGDim.r, 
-		        hGDim.h = 300 - hGDim.t - hGDim.b;
+		        hGDim.w = 400 - hGDim.l - hGDim.r, 
+		        hGDim.h = 240 - hGDim.t - hGDim.b;
 		            
 		        //create svg for histogram.
 		        var hGsvg = d3.select(id).append("svg")
@@ -107,7 +107,7 @@ function dashboard(id, fData){
 		    
 		    // function to handle pieChart.
 		    function pieChart(pD){
-		        var pC ={},    pieDim ={w:250, h: 250};
+		        var pC ={},    pieDim ={w:175, h: 175};
 		        pieDim.r = Math.min(pieDim.w, pieDim.h) / 2;
 		                
 		        // create svg for pie chart.
@@ -165,8 +165,8 @@ function dashboard(id, fData){
 		        var tr = legend.append("tbody").selectAll("tr").data(lD).enter().append("tr");
 		            
 		        // create the first column for each segment.
-		        tr.append("td").append("svg").attr("width", '16').attr("height", '16').append("rect")
-		            .attr("width", '16').attr("height", '16')
+		        tr.append("td").append("svg").attr("width", '10').attr("height", '10').append("rect")
+		            .attr("width", '10').attr("height", '10')
 					.attr("fill",function(d){ return segColor(d.type); });
 		            
 		        // create the second column for each segment.
