@@ -65,142 +65,181 @@
 			</div>
 		</div>
 
-		<div class="row" id="panel">
 
-		  	<div class="col-4">
-		    	<div class="list-group" id="list-tab" role="tablist">
-					<a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Desarroladores de la página</a>
-					<a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Timeline del Proyecto</a>
-					<a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Contacto</a>
-		    	</div>
-		  	</div>
-			<div class="col-8">
-			    <div class="tab-content" id="nav-tabContent">
-			      	<div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-			      		<div class="row">
-		  					<div class="col-sm-6">
-					      		<div class="card text-center" style="width: 20rem;">
-								  	<img class="card-img-top" src="img/hombre.jpg" alt="Card image cap">
-								  	<div class="card-body">
-								    	<p class="card-text">Allan Alarcón</p>
-								    	<p class="card-text">Estudiante de Ingeniería en Computación - Espol.</p>
-								  	</div>
-								</div>
-							</div>
-							<div class="col-sm-6">
-					      		<div class="card text-center" style="width: 20rem;">
-								  	<img class="card-img-top" src="img/mujer.jpg" alt="Card image cap">
-								  	<div class="card-body">
-								    	<p class="card-text">Irene Córdova</p>
-								    	<p class="card-text">Estudiante de Ingeniería en Computación - Espol.</p>
-								  	</div>
-								</div>
+		<div id="panel">
+			<nav class="nav nav-tabs" id="myTab" role="tablist">
+				<a class="nav-item nav-link active" id="nav-mapa-tab" data-toggle="tab" href="#nav-mapa" role="tab" aria-controls="nav-mapa" aria-selected="true">Acerca de</a>
+				<a class="nav-item nav-link" id="nav-add-tab" data-toggle="tab" href="#nav-add" role="tab" aria-controls="nav-add" aria-selected="true">Timeline del proyecto</a>
+				<a class="nav-item nav-link" id="nav-galeria-tab" data-toggle="tab" href="#nav-galeria" role="tab" aria-controls="nav-galeria" aria-selected="true">Contacto</a>
+			</nav>
+			
+
+		    <div class="tab-content" id="nav-tabContent">
+
+		    	<!-- Desarolladores-->
+		    	<div class="tab-pane fade show active" id="nav-mapa" role="tabpanel" aria-labelledby="nav-mapa-tab">
+		      		<div class="row" id="desarrolladores">
+		      			<div class="col-md-4" id="acercaDe">
+		      				<h2>Acerca de</h2>
+				      		<div id="texto"><p>Página web dedicada a las mascotas perdidas de todo Ecuador.</br></br>
+				      			Aquí podrás publicar la información de tu mascotas perdida, para que demás usuarios la vean y compartan la información y así ayudar a encontrar a tu mascota.
+				      			Además podrás conocer sobre que pasos seguir en caso de saber sobre algún caso de maltrato animal.
+								</p>
 							</div>
 						</div>
-			      	</div>
-		      		<div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-				      	<div class="container" id="tm">
-							<ul class="timeline">
-								<li class="timeline-inverted">
-								  	<div class="timeline-panel">
-								    	<div class="timeline-heading">
-								      		<h4 class="timeline-title">Noviembre</h4>
-								    	</div>
-								  	</div>
-								</li>
-								<li>
-								  	<div class="timeline-badge"><i class="glyphicon glyphicon-check">17</i></div>
-								  	<div class="timeline-panel">
-								    	<div class="timeline-body">
-								    	  	<p>Se presentará a las 10:45 el avance avance del proyecto, en la oficina del docente.</p>
-								    	</div>
-								  	</div>
-								</li>
-								<li class="timeline-inverted">
-								  	<div class="timeline-badge warning"><i class="glyphicon glyphicon-check">13</i></div>
-								  	<div class="timeline-panel">
-								    	<div class="timeline-body">
-								      		<p>Se presentó el primer avance en código del proyecto.</p>
-								    	</div>
-								  	</div>
-								</li>
-								<li class="timeline-badge">
-								  	<div class="timeline-badge success"><i class="glyphicon glyphicon-check">11</i></div>
-								  	<div class="timeline-panel">
-								    	<div class="timeline-body">
-								      		<p>Se trabajaron las páginas principales: index, mapa, agregar mascota, albergues.</p>
-								    	</div>
-								  	</div>
-								</li>
-								<li class="timeline-inverted">
-								  	<div class="timeline-panel">
-								    	<div class="timeline-heading">
-								      		<h4 class="timeline-title">Octubre</h4>
-								    	</div>
-								  	</div>
-								</li>
-								<li>
-								  	<div class="timeline-badge info"><i class="glyphicon glyphicon-check">18</i></div>
-								  	<div class="timeline-panel">
-								    	<div class="timeline-body">
-								      		<p>Primer borrador: diseño de la página web en documento word.</p>
-								    	</div>
-								  	</div>
-								</li>
-								<li class="timeline-inverted">
-									<div class="timeline-badge danger"><i class="glyphicon glyphicon-check">30</i></div>
-								  	<div class="timeline-panel">
-								    	<div class="timeline-body">
-								      		<p>Se estableció la idea del proyecto.</p>
-								    	</div>
-								  	</div>
-								</li>
-							</ul>
+	  					<div class="col-md-4" id="desarrollador">
+				      		<div class="card text-center">
+							  	<img class="img-responsive text-center" src="img/allan.jpeg" alt="Card image cap">
+							  	<div class="card-body">
+							    	<p class="card-text">Allan Alarcón</p>
+							    	<p class="card-text">Estudiante de Ingeniería en Computación - Espol.</p>
+							  	</div>
+							</div>
+						</div>
+						<div class="col-md-4" id="desarrollador">
+				      		<div class="card text-center"">
+							  	<img class="card-img-top img-responsive" src="img/allan.jpeg" alt="Card image cap">
+							  	<div class="card-body">
+							    	<p class="card-text">Irene Córdova</p>
+							    	<p class="card-text">Estudiante de Ingeniería en Computación - Espol.</p>
+							  	</div>
+							</div>
 						</div>
 					</div>
-			      	<div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+		      	</div>
 
-			      		<form id = form1>
-			      			
-							<div class="form-group row">
-								<h3><span class="col-md-1 col-md-offset-2 text-center glyphicon glyphicon-user"></span></h3>	
-								<div class="col-sm-8">
-									<input type="text" class="form-control" id="inputName" placeholder="Nombres y Apellidos">
-								</div>
-							</div>
+		      	<!-- Timeline-->
+		      	<div class="tab-pane fade" id="nav-add" role="tabpanel" aria-labelledby="nav-add-tab">
+		      		<div class="container" id="tm">
+						<ul class="timeline">							
+							<li>
+							  	<div class="timeline-badge info"><i class="glyphicon glyphicon-check">10</i></div>
+							  	<div class="timeline-panel">
+							    	<div class="timeline-body">
+							      		<p>Entrega del proyecto.</p>
+							    	</div>
+							  	</div>
+							</li>
+							<li class="timeline-inverted">
+							  	<div class="timeline-badge danger"><i class="glyphicon glyphicon-check">8</i></div>
+							  	<div class="timeline-panel">
+							    	<div class="timeline-body">
+							      		<p>Se hizo las correcciones pertinentes.</p>
+							    	</div>
+							  	</div>
+							</li>
+							<li class="timeline-badge">
+							  	<div class="timeline-panel">
+							    	<div class="timeline-heading">
+							      		<h4 class="timeline-title">Diciembre</h4>
+							    	</div>
+							  	</div>
+							</li>
+							<li class="timeline-inverted">
+							  	<div class="timeline-badge"><i class="glyphicon glyphicon-check">17</i></div>
+							  	<div class="timeline-panel">
+							    	<div class="timeline-body">
+							    	  	<p>Se presentará a las 10:45 el avance avance del proyecto, en la oficina del docente.</p>
+							    	</div>
+							  	</div>
+							</li>
+							<li class="timeline-badge">
+							  	<div class="timeline-badge warning"><i class="glyphicon glyphicon-check">13</i></div>
+							  	<div class="timeline-panel">
+							    	<div class="timeline-body">
+							      		<p>Se presentó el primer avance en código del proyecto.</p>
+							    	</div>
+							  	</div>
+							</li>
+							<li class="timeline-inverted">
+							  	<div class="timeline-badge success"><i class="glyphicon glyphicon-check">11</i></div>
+							  	<div class="timeline-panel">
+							    	<div class="timeline-body">
+							      		<p>Se trabajaron las páginas principales: index, mapa, agregar mascota, albergues.</p>
+							    	</div>
+							  	</div>
+							</li>	
+							<li class="timeline-badge">
+							  	<div class="timeline-panel">
+							    	<div class="timeline-heading">
+							      		<h4 class="timeline-title">Noviembre</h4>
+							    	</div>
+							  	</div>
+							</li>						
+							<li class="timeline-inverted">
+								<div class="timeline-badge danger"><i class="glyphicon glyphicon-check">30</i></div>
+							  	<div class="timeline-panel">
+							    	<div class="timeline-body">
+							      		<p>Primer borrador: diseño de la página web en documento word.</p>
+							    	</div>
+							  	</div>
+							</li>
+							<li>
+							  	<div class="timeline-badge info"><i class="glyphicon glyphicon-check">18</i></div>
+							  	<div class="timeline-panel">
+							    	<div class="timeline-body">
+							      		<p>Se estableció la idea del proyecto.</p>
+							    	</div>
+							  	</div>
+							</li>
+							<li class="timeline-inverted">
+							  	<div class="timeline-panel">
+							    	<div class="timeline-heading">
+							      		<h4 class="timeline-title">Octubre</h4>
+							    	</div>
+							  	</div>
+							</li>
+						</ul>
+					</div>
+		      	</div>
 
-							<div class="form-group row">
-								<h3><span class="col-md-1 col-md-offset-2 text-center glyphicon glyphicon-envelope"></span></h3>	
-								<div class="col-sm-8">
-									<input type="email" class="form-control" id="inputEmail" placeholder="E-mail">
-								</div>
+		      	<!-- Formulario de contacto-->
+		      	<div class="tab-pane fade" id="nav-galeria" role="tabpanel" aria-labelledby="nav-galeria-tab">
+			      	<form id = form1>			      			
+						<div class="form-group row">
+							<h3><span class="col-md-1 col-md-offset-2 text-center glyphicon glyphicon-user"></span></h3>	
+							<div class="col-sm-8">
+								<input type="text" class="form-control" id="inputName" placeholder="Nombres y Apellidos">
 							</div>
-							
-							<div class="form-group row">
-								<h3><span class="col-md-1 col-md-offset-2 text-center glyphicon glyphicon-phone"></span></h3>	
-								<div class="col-sm-8">
-									<input type="tel" class="form-control" id="inputTelefono" placeholder="Telefono">
-								</div>
-							</div>
+						</div>
 
-							<div class="form-group row">
-								<h3><span class="col-md-1 col-md-offset-2 text-center glyphicon glyphicon-send"></span></h3>	
-								<div class="col-sm-8">
-									<textarea class="form-control" id="inputDescripcion" rows="3" placeholder="Mensaje"></textarea>
-								</div>
-							</div>					
-							
-							<div class="form-group row">
-								<div class="col-sm-12 text-center">
-							  		<button type="submit" class="btn btn-primary">Enviar</button>
-								</div>
+						<div class="form-group row">
+							<h3><span class="col-md-1 col-md-offset-2 text-center glyphicon glyphicon-envelope"></span></h3>	
+							<div class="col-sm-8">
+								<input type="email" class="form-control" id="inputEmail" placeholder="E-mail">
 							</div>
-						</form>
-			      	</div>
-		    	</div>
-		  	</div>
+						</div>
+						
+						<div class="form-group row">
+							<h3><span class="col-md-1 col-md-offset-2 text-center glyphicon glyphicon-phone"></span></h3>	
+							<div class="col-sm-8">
+								<input type="tel" class="form-control" id="inputTelefono" placeholder="Telefono">
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<h3><span class="col-md-1 col-md-offset-2 text-center glyphicon glyphicon-send"></span></h3>	
+							<div class="col-sm-8">
+								<textarea class="form-control" id="inputDescripcion" rows="3" placeholder="Mensaje"></textarea>
+							</div>
+						</div>					
+						
+						<div class="form-group row">
+							<div class="col-sm-12 text-center">
+						  		<button type="submit" class="btn btn-primary">Enviar</button>
+							</div>
+						</div>
+					</form>
+				</div>
+
+				
+				</div>			
+	
+			</div>
+
 		</div>
 
+		
 		<footer class="text-center" id="footer">
 			<p> © Todos los Derechos Reservados </p>
 			<p>DAW 2017 - I</p>
