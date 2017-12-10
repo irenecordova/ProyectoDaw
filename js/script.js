@@ -36,6 +36,7 @@ function myMap() {
         if (http_request.status == 200) {
 
             respuesta = JSON.parse(http_request.response);
+            console.log(respuesta);
 
             var myCenter = new google.maps.LatLng(-2.157813, -79.922417);
             var mapCanvas = document.getElementById("googleMap");
@@ -111,7 +112,7 @@ function myMap() {
 window.onload = function() {
   makeRequest('data/animales.json');
 
-  document.getElementById("list-mapa-list").addEventListener("click", function(){
+  document.getElementById("nav-mapa-tab").addEventListener("click", function(){
     makeRequest('data/animales.json');
   });
 }
