@@ -1,7 +1,7 @@
 @import "https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:300,400";
 /* colors */
 
-@media screen and (min-width: 480px){
+@media screen and (min-width: 825px){
   .gallery {
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -305,14 +305,14 @@
     position: absolute;
     bottom: 8px;
     left: 50%;
-    font-size: 18px;
+    font-size: 2rem;
     background-color: rgba(0, 0, 0, 0.6);
     color: #ffffffff;
     text-align: left;
     padding: 1%; 
   }
 
-  figure{
+  label{
     position: relative;
   }
 
@@ -375,7 +375,8 @@ input, .wrap{
   text-align: left;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.6);
-  color: #ffffffff; 
+  color: #ffffffff;
+  height: 5%;
 }
 
 .gallery input#image1:checked ~ .thumbnails .thumb:nth-of-type(1) {
@@ -420,8 +421,8 @@ input, .wrap{
 .bottomleft {
   position: absolute;
   bottom: 8px;
-  left: 18%;
-  font-size: 18px;
+  left: 22%;
+  font-size: 1rem;
 }
 
 figure{

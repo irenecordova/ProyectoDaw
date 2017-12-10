@@ -25,8 +25,8 @@ function dashboard(id, fData){
 		    // function to handle histogram.
 		    function histoGram(fD){
 		        var hG={},    hGDim = {t: 60, r: 0, b: 30, l: 0};
-		        hGDim.w = 400 - hGDim.l - hGDim.r, 
-		        hGDim.h = 240 - hGDim.t - hGDim.b;
+		        hGDim.w = 325 - hGDim.l - hGDim.r, 
+		        hGDim.h = 195 - hGDim.t - hGDim.b;
 		            
 		        //create svg for histogram.
 		        var hGsvg = d3.select(id).append("svg")
@@ -86,7 +86,7 @@ function dashboard(id, fData){
 		        // create function to update the bars. This will be used by pie-chart.
 		        hG.update = function(nD, color){
 		            // update the domain of the y-axis map to reflect change in frequencies.
-		            y.domain([0, d3.max(nD, function(d) { return d[1]; })]);
+		       
 		            
 		            // Attach the new data to the bars.
 		            var bars = hGsvg.selectAll(".bar").data(nD);
@@ -126,12 +126,7 @@ function dashboard(id, fData){
 		            .each(function(d) { this._current = d; })
 		            .style("fill", function(d) { return segColor(d.data.type); })
 		            .on("mouseover",mouseover).on("mouseout",mouseout);
-
-		        // create function to update pie-chart. This will be used by histogram.
-		        pC.update = function(nD){
-		            piesvg.selectAll("path").data(pie(nD)).transition().duration(500)
-		                .attrTween("d", arcTween);
-		        }        
+       
 		        // Utility function to be called on mouseover a pie slice.
 		        function mouseover(d){
 		            // call the update function of histogram with new data.

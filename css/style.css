@@ -123,21 +123,33 @@ ul.horizontal-slide li[class*="col"]:first-child {
 	box-shadow: 0 6px 6px rgba(0, 0, 0, 0.5);
 }
 
-h4, h2, #p1, #p2, #p3{
-	color: #000000;
+.card-title, #p1, #p2, #p3{
 	font-family: 'Pacifico', cursive;
+	color: #fff; 
+    text-shadow:
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;	
+}
+
+h4{
+	font-family: 'Pacifico', cursive;
+
 }
 
 #p1, #p3{
 	padding-top: 10%;
 	color: #B02323;
 	text-align: center;
+	font-family: 'Pacifico', cursive;
 }
 
 #p2{
 	padding-top: 10%;
 	color: #F23737;  
 	text-align:center;
+	font-family: 'Pacifico', cursive;
 }
 
 #texto1, #acercaDe p {
@@ -279,6 +291,7 @@ footer{
 	padding-left: 10%;
 	padding-right: 10%;
 	padding-top: 5%;
+	text-shadow: 3px 2px #DFDBDB;
 }
 
 #preguntas {
@@ -325,7 +338,6 @@ footer{
 	padding: 1%;
 	border: .1rem solid #d4d4d4;
   	border-radius: 2%;
-
 	}
 }
 
@@ -398,12 +410,18 @@ a{
 }	
 
 h2{
+	font-family: 'Pacifico', cursive;
 	color: #B02323;
 	margin-top: 8%;
 	text-align: center;
-	text-shadow: 3px 2px #9B9494;
+	text-shadow: 3px 2px #DFDBDB;
 }
 
+#estadistica{
+	margin-left: -25%;
+	padding-left: -50%;
+}
 
-
-
+.legend{
+	width: 20%;
+}
