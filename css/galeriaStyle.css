@@ -429,3 +429,34 @@ figure{
   position: relative;
 }
 
+#img1 {
+  background-image: url("../img/mascotas/mascota1.jpeg");
+}
+
+#img2 {
+  background-image: url('../img/mascotas/mascota2.jpg');
+}
+
+#img3 {
+  background-image: url('../img/mascotas/mascota3.jpg');
+}
+
+#img4 {
+  background-image: url('../img/mascotas/mascota4.jpg');
+}
+
+#img5 {
+  background-image: url('../img/mascotas/mascota5.jpg');
+}
+
+#img6 {
+  background-image: url('../img/mascotas/mascota6.jpg');
+}
+
+#img7 {
+  background-image: url('../img/mascotas/mascota7.jpg');
+}
+
+#img8 {
+  background-image: url('../img/mascotas/mascota8.jpg');
+}

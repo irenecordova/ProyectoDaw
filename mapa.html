@@ -5,7 +5,8 @@
 		<title>Ver Mapa</title>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Página web para la búsqueda de mascotas">
+		<meta name="description" content="Página para ver las mascotas en el mapa">
+		<meta name="keywords" content="mascota, perdido, perro, gato, perdida, búsqueda, buscar, mapa, denunciar, denuncia, maltrato, maltrato animal, evento, canino, evento canino, evento gatuno">
 		<meta name="author" content="Allan Alarcón - Irene Córdova">
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -17,6 +18,19 @@
 		<link href="https://fonts.googleapis.com/css?family=Loved+by+the+King" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 		
+		<!-- Scrip para el mapa-->
+		<script src="js/script.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQCSUuzO4bdYjEDa_768ze5zFRD4dYtrU&callback=myMap"></script>
+
+		<!-- Scrip para las estadísticas-->
+		<script src="http://d3js.org/d3.v3.min.js"></script>
+		<script src="js/estadistica.js"></script>		
+		
+
+		<!-- Scrip Boopstrap-->
+	    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>	
 	</head>
 
 	<body>
@@ -108,56 +122,56 @@
 						      <figure>
 						      	
 						        <label for="fullscreen">
-						          <img src="img/mascotas/mascota1.jpeg" alt="image1"/>
+						          <img src="img/mascotas/mascota1.jpeg" alt="Error al cargar imagen"/>
 						          <span class="bottomleft">Batman<br>Edad: 1 año, Sexo: Macho, Raza: Schnauzer<br>Descripcion: Pelaje gris. Buen estado.</span>          	
 						        </label>
 						      </figure>
 						      
 						      <figure>
 						        <label for="fullscreen">
-						          <img src="img/mascotas/mascota2.jpg" alt="image2"/>
+						          <img src="img/mascotas/mascota2.jpg" alt="Error al cargar imagen"/>
 						          <span class="bottomleft">Manchas<br>Edad: 1 año, Sexo: Macho, Raza: Dalmata<br>Descripcion: En buen estado, jugueton.</span>
 						        </label>
 						      </figure>
 
 						      <figure>
 						        <label for="fullscreen">
-						          <img src="img/mascotas/mascota3.jpg" alt="image3" />
+						          <img src="img/mascotas/mascota3.jpg" alt="Error al cargar imagen" />
 						          <span class="bottomleft">Rodolfo<br>Edad: 2 años, Sexo: Macho, Raza: Mestizo<br>Descripcion: Es domable.</span>
 						        </label>
 						      </figure>
 
 						      <figure>
 						        <label for="fullscreen">
-						          <img src="img/mascotas/mascota4.jpg" alt="image4"/>
+						          <img src="img/mascotas/mascota4.jpg" alt="Error al cargar imagen"/>
 						          <span class="bottomleft">Chimuela<br>Edad: 1 año, Sexo: Hembra, Raza: Mestiza<br>Descripcion: Se encuentra embarazada por primera vez.</span>
 						        </label>
 						      </figure>
 
 						      <figure>
 						        <label for="fullscreen">
-						          <img src="img/mascotas/mascota5.jpg" alt="image5"/>
+						          <img src="img/mascotas/mascota5.jpg" alt="Error al cargar imagen"/>
 						          <span class="bottomleft">Trini<br>Edad: 4 meses, Sexo: Hembra, Raza: Mestiza<br>Descripcion: Tranquila.</span>
 						        </label>
 						      </figure>
 
 						      <figure>
 						        <label for="fullscreen">
-						          <img src="img/mascotas/mascota6.jpg" alt="image6"/>
+						          <img src="img/mascotas/mascota6.jpg" alt="Error al cargar imagen"/>
 						          <span class="bottomleft">Gatito<br>Edad: 10 meses, Sexo: Macho, Raza: Siames<br>Descripcion: Es desconfiado y miedoso. Tener cuidado.</span>
 						        </label>
 						      </figure>
 
 						      <figure>
 						        <label for="fullscreen">
-						          <img src="img/mascotas/mascota7.jpg" alt="image7"/>
+						          <img src="img/mascotas/mascota7.jpg" alt="Error al cargar imagen"/>
 						          <span class="bottomleft">Nini<br>Edad: 2 años, Sexo: Hembra, Raza: Mezcla con schnauzer<br>Descripcion: Muy juguetona.</span>
 						        </label>
 						      </figure>
 
 						      <figure>
 						        <label for="fullscreen">
-						          <img src="img/mascotas/mascota8.jpg" alt="image8"/>
+						          <img src="img/mascotas/mascota8.jpg" alt="Error al cargar imagen"/>
 						          <span class="bottomleft">Matt<br>Edad: 2 años, Sexo: Macho, Raza: Siames<br>Descripcion: Pelaje negro.</span>
 						        </label>
 						      </figure>
@@ -165,21 +179,21 @@
 						    
 						    <div class="thumbnails">						      
 						 						      
-						      <label for="image1" class="thumb" style="background-image: url('img/mascotas/mascota1.jpeg')"><span class="desc">Batman<br>Raza: Schnauzer</span></label>
+						      <label id="img1" for="image1" class="thumb"><span class="desc">Batman<br>Raza: Schnauzer</span></label>
 						      
-						      <label for="image2" class="thumb" style="background-image: url('img/mascotas/mascota2.jpg')"><span class="desc">Manchas<br>Raza: Dalmata</span></label>
+						      <label id="img2" for="image2" class="thumb"><span class="desc">Manchas<br>Raza: Dalmata</span></label>
 						      
-						      <label for="image3" class="thumb" style="background-image: url('img/mascotas/mascota3.jpg')"><span class="desc">Rodolfo<br>Raza: Mestizo</span></label>
+						      <label id="img3" for="image3" class="thumb"><span class="desc">Rodolfo<br>Raza: Mestizo</span></label>
 						        
-						      <label for="image4" class="thumb" style="background-image: url('img/mascotas/mascota4.jpg')"><span class="desc">Chimuela<br>Raza: Mestiza</span></label>
+						      <label id="img4" for="image4" class="thumb"><span class="desc">Chimuela<br>Raza: Mestiza</span></label>
 
-						      <label for="image5" class="thumb" style="background-image: url('img/mascotas/mascota5.jpg')"><span class="desc">Trini<br>Raza: Mestiza</span></label>
+						      <label id="img5" for="image5" class="thumb"><span class="desc">Trini<br>Raza: Mestiza</span></label>
 						      
-						      <label for="image6" class="thumb" style="background-image: url('img/mascotas/mascota6.jpg')"><span class="desc">Gatito<br>Raza: Siames</span></label>
+						      <label id="img6" for="image6" class="thumb"><span class="desc">Gatito<br>Raza: Siames</span></label>
 						      
-						      <label for="image7" class="thumb" style="background-image: url('img/mascotas/mascota7.jpg')"><span class="desc">Nini<br>Raza:Schnauzer</span></label>
+						      <label id="img7" for="image7" class="thumb"><span class="desc">Nini<br>Raza:Schnauzer</span></label>
 						        
-						      <label for="image8" class="thumb" style="background-image: url('img/mascotas/mascota8.jpg')"><span class="desc">Matt<br>Raza: Siames</span></label>
+						      <label id="img8" for="image8" class="thumb"><span class="desc">Matt<br>Raza: Siames</span></label>
 						    </div>
 						  </div>
 					</div>
@@ -189,7 +203,7 @@
 		      	<div class="tab-pane fade" id="nav-estadisticas" role="tabpanel" aria-labelledby="nav-estadisticas-tab">
 		      		<div class="row panel">
 						<div class="col-lg-12">          
-							<p class="introduccion">Estadísticas de animales perdidos en todo el año por ciudad.</p>
+							<p class="introduccion">Estadísticas de animales perdidos en todo el año por ciudad</p>
 						</div>
 					</div>
 		      		<div class="text-center" id="estadistica">
@@ -208,20 +222,5 @@
 		<footer class="text-center" id="footer">
 			<p> © Todos los Derechos Reservados </p>
 		</footer>
-
-		<!-- Scrip para el mapa-->
-		<script src="js/script.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQCSUuzO4bdYjEDa_768ze5zFRD4dYtrU&callback=myMap"></script>
-
-		<!-- Scrip para las estadísticas-->
-		<script src="http://d3js.org/d3.v3.min.js"></script>
-		<script src="js/estadistica.js"></script>		
-		
-
-		<!-- Scrip Boopstrap-->
-	    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>	
-		
 	</body>
 </html>
