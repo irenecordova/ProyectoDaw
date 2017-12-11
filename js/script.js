@@ -1,7 +1,7 @@
 var http_request = false;
 var respuesta = false;
-var latitud = -2.157813;
-var longitud = -79.922417;
+var latitud = -1.406514;
+var longitud = -78.625337;
 var cerca = 7;
 
 
@@ -130,7 +130,15 @@ window.onload = function() {
 
 	makeRequest('data/animales.json');
 
-	document.getElementById("nav-mapa-tab").addEventListener("click", function(){
+	document.getElementById("actualizar").addEventListener("click", function(){
+    latitud = -1.406514;
+    longitud = -78.625337;
+    cerca = 7;
 		makeRequest('data/animales.json');
+    getLocation();
 	});
+
+  document.getElementById("ubicar").addEventListener("click", function(){
+    makeRequest('data/animales.json');
+  });
 }
