@@ -1,25 +1,25 @@
 {
 	"perros": {"Batman": {"edad":"1 año","sexo":"Macho", "raza":"Schnauzer", "descripcion":"Pelaje gris. Buen estado.",
 						"contacto":"0981509598", "direccion":"FIEC", "latitud":"-2.144386",
-						"longitud":"-79.967733", "tipo":"img/icon-dog.png", "imagen":"img/mascota1.jpeg", "ciudad":"Guayaquil"},
+						"longitud":"-79.967733", "tipo":"img/icon-dog.png", "imagen":"img/mascotas/mascota1.jpeg", "ciudad":"Guayaquil"},
 				"Manchas": {"edad":"1 año","sexo":"Macho", "raza":"Dalmata", "descripcion":"Tiene todas las vacunas. En buen estado.",
 						"contacto":"0996764741", "direccion":"Urbanizaci&oacuten Auqu&iacute Chico", "latitud":"-0.211175",
-						"longitud":"-78.437019", "tipo":"img/icon-dog.png", "imagen":"img/mascota2.jpg"},
+						"longitud":"-78.437019", "tipo":"img/icon-dog.png", "imagen":"img/mascotas/mascota2.jpg"},
 				"Rodolfo": {"edad":"2 años","sexo":"Macho", "raza":"Mestizo", "descripcion":"Es cariñoso y domable.",
 						"contacto":"0992679791", "direccion":"Calle Emilio Obando", "latitud":"-0.085001",
-						"longitud":"-78.426521", "tipo":"img/icon-dog.png", "imagen":"img/mascota3.jpg"},
+						"longitud":"-78.426521", "tipo":"img/icon-dog.png", "imagen":"img/mascotas/mascota3.jpg"},
 				"Chimuela": {"edad":"1 año","sexo":"Hembra", "raza":"Mestiza", "descripcion":"Se encuentra embarazada por primera vez.",
 						"contacto":"0982891979", "direccion":"Brasil y Carchi", "latitud":"-2.199956",
-						"longitud":"-79.899766", "tipo":"img/icon-dog.png", "imagen":"img/mascota4.jpg"},
+						"longitud":"-79.899766", "tipo":"img/icon-dog.png", "imagen":"img/mascotas/mascota4.jpg"},
 				"Trini": {"edad":"4 meses","sexo":"Hembra", "raza":"Mestiza", "descripcion":"Tranquila.",
 						"contacto":"0988848207", "direccion":"Samanes 2 5to Callej&oacuten 20B", "latitud":"-2.111347",
-						"longitud":"-79.903453", "tipo":"img/icon-dog.png", "imagen":"img/mascota5.jpg"},
+						"longitud":"-79.903453", "tipo":"img/icon-dog.png", "imagen":"img/mascotas/mascota5.jpg"},
 				"Nini": {"edad":"2 años","sexo":"Hembra", "raza":"Mezcla con Schnauzer", "descripcion":"Muy juguetona.",
 						"contacto":"042895135", "direccion":"Avenida Carlos Mantilla", "latitud":"-0.090852",
-						"longitud":"-78.441103", "tipo":"img/icon-dog.png", "imagen":"img/mascota7.jpg"}
+						"longitud":"-78.441103", "tipo":"img/icon-dog.png", "imagen":"img/mascotas/mascota7.jpg"}
 			 	},
 	"gatos": {"Gatito": {"edad":"10 meses","sexo":"Macho", "raza":"Saimes", "descripcion":"Es desconfiado y miedoso. Tener cuidado.",
 						"contacto":"0958869764", "direccion":"Albonor Calle Jaime Roldos Garc&eacutes", "latitud":"-2.148626",
-						"longitud":"-79.967514", "tipo":"img/icon-cat.png", "imagen":"img/mascota6.jpg"}
+						"longitud":"-79.967514", "tipo":"img/icon-cat.png", "imagen":"img/mascotas/mascota6.jpg"}
 				}
 }
