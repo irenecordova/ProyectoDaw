@@ -66,6 +66,12 @@ div#imagenprincipal {
 	margin-bottom: 5%;
 }
 
+#googleMap {
+	margin-left: 10%;
+	width: 100%;
+	height: 100%;
+}
+
 li img{
 	width: 100%;
 }
@@ -151,6 +157,7 @@ h4{
 	font-family: 'Boogaloo', cursive;
 	text-align:center;
 	font-size: 1.2rem;
+	padding-top: 5%;
 }
 
 #texto2 {
@@ -294,9 +301,7 @@ footer{
 }
 
 #googleMap {
-	margin-top: 1%;
-	margin-left: 25%;
-	width: 50%;
+	width: 85%;
 	height: 30rem;
 }
 
@@ -332,7 +337,7 @@ footer{
 
 	#pasos{
 	margin-top: 5%;
-	padding: 1%;
+	padding: .5rem;
 	border: .1rem solid #d4d4d4;
   	border-radius: 2%;
 	}
@@ -340,7 +345,7 @@ footer{
 
 #pasos{
 	margin: 1.3%;
-	padding: 1%;
+	padding: .5rem;
 	border: .1rem solid #d4d4d4;
   	border-radius: 2%;
 }
@@ -355,12 +360,14 @@ footer{
 }
 
 #img4, #img6{
-	width: 20rem;
-	height: 20rem;
+	width: 15rem;
+	height: 17rem;
+	margin-top: 3%;
+	border-radius: 3%;
 }
 
 #img5{
-	width: 15rem;
+	width: 11rem;
 }
 
 a{
@@ -368,18 +375,16 @@ a{
 }
 
 #desarrollador .card {
-	height: 90%;
+	height: 80%;
 	width: 100%;
 	margin-top: 5%;
 	align-content: center;
 }
 
 #desarrollador img{
-	height: 60%;
-	width: 60%;	
+	width: 50%;
 	padding: 5%;
 	margin-left: 20%;
-	margin-bottom: 10%;
 }
 
 #texto{
