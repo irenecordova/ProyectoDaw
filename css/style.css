@@ -1,37 +1,18 @@
-div#imagenPortada {
-	background-image: url("../img/banner.png");
-	height: 50%;
-	background-position: relative;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: center;
-}
-
 div#imagenprincipal {
-	background-image: url("../img/banner2.jpg");
-	height: 50%;
+	background-image: url("../img/banner.jpg");
 	background-position: relative;
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
 }
 
-#portada1 h1 {
-	text-align: center;
-	margin: 32%;
-	font-size: 5rem;
-	font-family: 'Lobster', cursive;
-	color: #ffffffff;
-}
-
 #portada h1 {
 	text-align: center;
 	padding-top: 6%;
-	font-size: 5rem;
+	font-size: 4.5rem;
 	font-family: 'Lobster', cursive;	
 	color: #F8E8E8;
 	text-shadow: 5px 3px #464040;
-	
 }
 
 #portada {
@@ -223,33 +204,6 @@ footer{
   margin: 5% -5%;
 }
 
-/* Profile sidebar */
-.profile-sidebar {	
-  background: #fff;
-}
-
-.profile-userpic img, #imgMascota{
-  float: none;
-  margin: 0 auto;
-  width: 50%;
-  height: 50%;
-  -webkit-border-radius: 50% !important;
-  -moz-border-radius: 50% !important;
-  border-radius: 50% !important;
-}
-
-.profile-usertitle {
-  text-align: center;
-  margin-top: 4%;
-}
-
-.profile-usertitle-name {
-  color: #5a7391;
-  font-size: 1.3rem;
-  font-weight: 600;
-  margin-bottom: 4%;
-}
-
 #icono{
 	width: 2.5%; 
 	height: 2.5%;
@@ -262,15 +216,6 @@ footer{
 
 #configuracion{
 	background-image: url("../img/ajustes.png");
-	background-repeat: no-repeat;
-	background-size: 60%;
-	background-position: center;
-	width: 15%; 
-	height: 100%;
-}
-
-#compartir{
-	background-image: url("../img/facebook.png");
 	background-repeat: no-repeat;
 	background-size: 60%;
 	background-position: center;
@@ -295,8 +240,8 @@ footer{
 
 #googleMap {
 	margin-top: 1%;
-	margin-left: 25%;
-	width: 50%;
+	margin-left: 12%;
+	width: 76%;
 	height: 30rem;
 }
 
@@ -411,6 +356,13 @@ h2{
 	font-family: 'Pacifico', cursive;
 	color: #B02323;
 	margin-top: 8%;
+	text-align: center;
+	text-shadow: 3px 2px #DFDBDB;
+}
+
+#nombrePerro{
+	font-family: 'Pacifico', cursive;
+	color: #B02323;
 	text-align: center;
 	text-shadow: 3px 2px #DFDBDB;
 }

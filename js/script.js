@@ -2,6 +2,7 @@ var http_request = false;
 var respuesta = false;
 var latitud = -2.157813;
 var longitud = -79.922417;
+var cerca = 12;
 
 
 function makeRequest(url) {
@@ -42,7 +43,7 @@ function myMap() {
 
             var myCenter = new google.maps.LatLng(latitud, longitud);
             var mapCanvas = document.getElementById("googleMap");
-            var mapOptions = {center: myCenter, zoom: 12};
+            var mapOptions = {center: myCenter, zoom: cerca};
             var map = new google.maps.Map(mapCanvas, mapOptions);
 
             var i=0;
@@ -55,21 +56,20 @@ function myMap() {
               for (perro in respuesta[clave]) {
                 coordenadas[i] = {lat: parseFloat(respuesta[clave][perro]["latitud"]), lng: parseFloat(respuesta[clave][perro]["longitud"])};
 
-                informacion[i] = "<div id='content'>"+
+                informacion[i] = "<div id='content'"+
                                    "<div id='siteNotice'>"+
                                    "</div>"+
                                      "<div class='contentImg text-center'>"+
                                        "<img src=" + respuesta[clave][perro]["imagen"] + " title=" + perro + " width=25%/>"+
                                      "</div>"+
                                      "<div class='contentTxt'>"+
-                                       "<h2><center>" + perro + "</center></h2>"+
+                                       "<h3 id='nombrePerro' align=center><center>" + perro + "</center></h3>"+
                                        "<p><b>Edad: </b>" + respuesta[clave][perro]["edad"] + " </p>"+
                                        "<p><b>Sexo: </b>" + respuesta[clave][perro]["sexo"] + " </p>"+
                                        "<p><b>Raza: </b></b>" + respuesta[clave][perro]["raza"] + " </p>"+
                                        "<p><b>Descripci&oacute;n: </b>" + respuesta[clave][perro]["descripcion"] + " </p>"+
                                        "<p><b>Direcci&oacute;n: </b>" + respuesta[clave][perro]["direccion"] + " </p>"+
                                        "<p><b>Contacto: </b><a href='tel:+593" + respuesta[clave][perro]["contacto"].substr(1,9) + " '>" + respuesta[clave][perro]["contacto"] + " </a> <a href='tel:+593" + respuesta[clave][perro]["contacto"].substr(1,9) + " '><img src=http://www.vodafone.es/static/imagen/pre_ucm_mgmt_003892.gif title=Llamar></a></p>"+
-                                       "<input type='submit' id='compartir' class='btn btn-light' value='      '>"+
                                      "</div>"+
                                      "<div class='clear'></div>"+
                                  "</div>";
@@ -122,11 +122,12 @@ function getLocation() {
 function showPosition(position) {
     latitud = parseFloat(position.coords.latitude);
     longitud = parseFloat(position.coords.longitude);
+    cerca = 17;
 }
 
 window.onload = function() {
 	getLocation();
-	
+
 	makeRequest('data/animales.json');
 
 	document.getElementById("nav-mapa-tab").addEventListener("click", function(){
