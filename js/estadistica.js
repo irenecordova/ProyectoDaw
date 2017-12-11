@@ -161,7 +161,7 @@ function dashboard(id, fData){
 		            
 		        // create the first column for each segment.
 		        tr.append("td").append("svg").attr("width", '10').attr("height", '10').append("rect")
-		            .attr("width", '10').attr("height", '10')
+		            .attr("width", '100').attr("height", '100')
 					.attr("fill",function(d){ return segColor(d.type); });
 		            
 		        // create the second column for each segment.

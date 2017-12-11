@@ -166,9 +166,7 @@ h4{
 }
 
 #tm{
-	padding-left: 20%;
-	padding-right: 20%;
-	padding-top: 5%;
+	padding: 5%;
 }
 
 .panel{
@@ -375,10 +373,6 @@ h2{
 }
 
 #estadistica{
-	margin-left: -25%;
-	padding-left: -50%;
+	margin-left: -5%;
 }
 
-.legend{
-	width: 20%;
-}
