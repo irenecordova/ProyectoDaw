@@ -13,7 +13,9 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/timelineStyle.css">		
 		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Boogaloo|Loved+by+the+King|Pacifico" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Loved+by+the+King" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 	</head>
 
 	<body>
@@ -63,63 +65,36 @@
 		</div>
 
 
-		<div id="panel">
-			<nav class="nav nav-tabs" id="myTab" role="tablist">
+		<div class="panel">
+			<div class="nav nav-tabs" id="myTab" role="tablist">
 				<a class="nav-item nav-link active" id="nav-mapa-tab" data-toggle="tab" href="#nav-mapa" role="tab" aria-controls="nav-mapa" aria-selected="true">Acerca de</a>
 				<a class="nav-item nav-link" id="nav-add-tab" data-toggle="tab" href="#nav-add" role="tab" aria-controls="nav-add" aria-selected="true">Timeline del proyecto</a>
 				<a class="nav-item nav-link" id="nav-galeria-tab" data-toggle="tab" href="#nav-galeria" role="tab" aria-controls="nav-galeria" aria-selected="true">Contacto</a>
-			</nav>
+			</div>
 			
 
 		    <div class="tab-content" id="nav-tabContent">
 
 		    	<!-- Desarolladores-->
 		    	<div class="tab-pane fade show active" id="nav-mapa" role="tabpanel" aria-labelledby="nav-mapa-tab">
-		      		<!--div class="row" id="desarrolladores">
-		      			<div class="col-md-4" id="acercaDe">
-				      		<div id="texto"><p>Página web dedicada a las mascotas perdidas de todo Ecuador.</br></br>
-				      			Aquí podrás publicar la información de tu mascotas perdida, para que demás usuarios la vean y compartan la información y así ayudar a encontrar a tu mascota.
-				      			Además podrás conocer sobre que pasos seguir en caso de saber sobre algún caso de maltrato animal.
-								</p>
-							</div>
-						</div>
-	  					<div class="col-md-4" id="desarrollador">
-				      		<div class="card text-center">
-							  	<img class="img-responsive text-center" src="img/allan.jpeg" alt="Card image cap">
-							  	<div class="card-body">
-							    	<p class="card-text">Allan Alarcón</p>
-							    	<p class="card-text">Estudiante de Ingeniería en Computación - Espol.</p>
-							  	</div>
-							</div>
-						</div>
-						<div class="col-md-4" id="desarrollador">
-				      		<div class="card text-center"">
-							  	<img class="card-img-top img-responsive" src="img/irene.jpeg" alt="Card image cap">
-							  	<div class="card-body">
-							    	<p class="card-text">Irene Córdova</p>
-							    	<p class="card-text">Estudiante de Ingeniería en Computación - Espol.</p>
-							  	</div>
-							</div>
-						</div>
-					</div-->
 					<div class="container marketing text-center">
 						<div class="row text-center">
-							<div class="col-lg-4" id="pasos">
+							<div class="col-lg-4 pasos">
 								<h2>Desarrollador</h2>
-								<img class="image-responsive" id="img4" src="img/allan.jpeg" alt="Generic placeholder image">								
-								<p id="texto1">Allan Alarcon</br>Estudiante</br>Ingeniería en Computación</br>Escuela Superior Politécnica del Litoral</p>
+								<img class="image-responsive img4" src="img/allan.jpeg" alt="Generic placeholder image">								
+								<p class="texto1">Allan Alarcon<br>Estudiante<br>Ingeniería en Computación<br>Escuela Superior Politécnica del Litoral</p>
 							</div>  
-							<div class="col-lg-3" id="pasos">
-								<img class="rounded-circle image-responsive" id="img2" src="img/equipo.png" alt="Generic placeholder image">
+							<div class="col-lg-3 pasos">
+								<img class="rounded-circle image-responsive img2" src="img/equipo.png" alt="Generic placeholder image">
 								<h2>Acerca de</h2>
-								<p id="texto1">Página web dedicada a las mascotas perdidas de todo Ecuador.</br></br>
+								<p class="texto1">Página web dedicada a las mascotas perdidas de todo Ecuador.<br><br>
 				      			Aquí podrás publicar la información de tu mascotas perdida, para que demás usuarios la vean y compartan la información y así ayudar a encontrar a tu mascota.
 				      			Además podrás conocer sobre que pasos seguir en caso de saber sobre algún caso de maltrato animal.</p>
 							</div><!-- /.col-lg-4 -->
-							<div class="col-lg-4" id="pasos">
+							<div class="col-lg-4 pasos">
 								<h2>Desarrolladora</h2>
-								<img class="image-responsive" id="img4" src="img/irene.jpeg" alt="Generic placeholder image">
-								<p id="texto1">Irene Córdova</br>Estudiante</br>Ingeniería en Computación</br>Escuela Superior Politécnica del Litoral</p>
+								<img class="image-responsive img4" src="img/irene.jpeg" alt="Generic placeholder image">
+								<p class="texto1">Irene Córdova<br>Estudiante<br>Ingeniería en Computación<br>Escuela Superior Politécnica del Litoral</p>
 							</div>				
 						</div>
 					</div>
@@ -214,28 +189,28 @@
 		      	<div class="tab-pane fade" id="nav-galeria" role="tabpanel" aria-labelledby="nav-galeria-tab">
 			      	<form id = form1>			      			
 						<div class="form-group row">
-							<h3><span class="col-md-1 col-md-offset-2 text-center glyphicon glyphicon-user"></span></h3>	
+							<span class="col-md-4 col-md-offset-2">Nombres y Apellidos</span>
 							<div class="col-sm-8">
 								<input type="text" class="form-control" id="inputName" placeholder="Nombres y Apellidos">
 							</div>
 						</div>
 
 						<div class="form-group row">
-							<h3><span class="col-md-1 col-md-offset-2 text-center glyphicon glyphicon-envelope"></span></h3>	
+							<span class="col-md-4 col-md-offset-2">E-mail</span>
 							<div class="col-sm-8">
 								<input type="email" class="form-control" id="inputEmail" placeholder="E-mail">
 							</div>
 						</div>
 						
 						<div class="form-group row">
-							<h3><span class="col-md-1 col-md-offset-2 text-center glyphicon glyphicon-phone"></span></h3>	
+							<span class="col-md-4 col-md-offset-2">Teléfono</span>
 							<div class="col-sm-8">
 								<input type="tel" class="form-control" id="inputTelefono" placeholder="Telefono">
 							</div>
 						</div>
 
 						<div class="form-group row">
-							<h3><span class="col-md-1 col-md-offset-2 text-center glyphicon glyphicon-send"></span></h3>	
+							<span class="col-md-4 col-md-offset-2">Mensaje</span>
 							<div class="col-sm-8">
 								<textarea class="form-control" id="inputDescripcion" rows="3" placeholder="Mensaje"></textarea>
 							</div>
@@ -243,14 +218,12 @@
 						
 						<div class="form-group row">
 							<div class="col-sm-12 text-center">
-						  		<button type="submit" class="btn btn-primary">Enviar</button>
+						  		<button type="submit" class="btn btn-danger">Enviar</button>
 							</div>
 						</div>
 					</form>
 				</div>
-
-				
-				</div>			
+		
 	
 			</div>
 

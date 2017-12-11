@@ -14,7 +14,9 @@
 		<link rel="stylesheet" type="text/css" href="css/galeriaStyle.css">
 		<link rel="stylesheet" type="text/css" href="css/galeriaStyle2.css">
 		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Boogaloo|Loved+by+the+King|Pacifico" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Loved+by+the+King" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 		
 	</head>
 
@@ -66,14 +68,12 @@
 			</div>
 		</div>
 
-		
-
-		<div id="panel">
-			<nav class="nav nav-tabs" id="myTab" role="tablist">
+		<div class="panel">
+			<div class="nav nav-tabs" id="myTab" role="tablist">
 				<a class="nav-item nav-link active" id="nav-mapa-tab" data-toggle="tab" href="#nav-mapa" role="tab" aria-controls="nav-mapa" aria-selected="true">Mapa</a>
 				<a class="nav-item nav-link" id="nav-galeria-tab" data-toggle="tab" href="#nav-galeria" role="tab" aria-controls="nav-galeria" aria-selected="true">Galería</a>
 				<a class="nav-item nav-link" id="nav-estadisticas-tab" data-toggle="tab" href="#nav-estadisticas" role="tab" aria-controls="nav-estadisticas" aria-selected="true">Estadísticas</a>
-			</nav>
+			</div>
 			
 
 		    <div class="tab-content" id="nav-tabContent">
@@ -89,7 +89,7 @@
 
 		      	<!-- Galería-->
 		      	<div class="tab-pane fade" id="nav-galeria" role="tabpanel" aria-labelledby="nav-galeria-tab">			      		
-		      		<section class="gallery">
+		      		<div class="gallery">
 						  <div class="carousel">
 						    
 						    <input type="radio" id="image1" name="gallery-control" checked>
@@ -110,80 +110,80 @@
 						      	
 						        <label for="fullscreen">
 						          <img src="img/mascota1.jpeg" alt="image1"/>
-						          <div class="bottomleft">Batman</br>Edad: 1 año, Sexo: Macho, Raza: Schnauzer</br>Descripcion: Pelaje gris. Buen estado.</div>          	
+						          <span class="bottomleft">Batman<br>Edad: 1 año, Sexo: Macho, Raza: Schnauzer<br>Descripcion: Pelaje gris. Buen estado.</span>          	
 						        </label>
 						      </figure>
 						      
 						      <figure>
 						        <label for="fullscreen">
 						          <img src="img/mascota2.jpg" alt="image2"/>
-						          <div class="bottomleft">Manchas</br>Edad: 1 año, Sexo: Macho, Raza: Dalmata</br>Descripcion: En buen estado, jugueton.</div>
+						          <span class="bottomleft">Manchas<br>Edad: 1 año, Sexo: Macho, Raza: Dalmata<br>Descripcion: En buen estado, jugueton.</span>
 						        </label>
 						      </figure>
 
 						      <figure>
 						        <label for="fullscreen">
 						          <img src="img/mascota3.jpg" alt="image3" />
-						          <div class="bottomleft">Rodolfo</br>Edad: 2 años, Sexo: Macho, Raza: Mestizo</br>Descripcion: Es cariñoso y domable.</div>
+						          <span class="bottomleft">Rodolfo<br>Edad: 2 años, Sexo: Macho, Raza: Mestizo<br>Descripcion: Es domable.</span>
 						        </label>
 						      </figure>
 
 						      <figure>
 						        <label for="fullscreen">
 						          <img src="img/mascota4.jpg" alt="image4"/>
-						          <div class="bottomleft">Chimuela</br>Edad: 1 año, Sexo: Hembra, Raza: Mestiza</br>Descripcion: Se encuentra embarazada por primera vez.</div>
+						          <span class="bottomleft">Chimuela<br>Edad: 1 año, Sexo: Hembra, Raza: Mestiza<br>Descripcion: Se encuentra embarazada por primera vez.</span>
 						        </label>
 						      </figure>
 
 						      <figure>
 						        <label for="fullscreen">
 						          <img src="img/mascota5.jpg" alt="image5"/>
-						          <div class="bottomleft">Trini</br>Edad: 4 meses, Sexo: Hembra, Raza: Mestiza</br>Descripcion: Tranquila y cari&ntildeosa.</div>
+						          <span class="bottomleft">Trini<br>Edad: 4 meses, Sexo: Hembra, Raza: Mestiza<br>Descripcion: Tranquila.</span>
 						        </label>
 						      </figure>
 
 						      <figure>
 						        <label for="fullscreen">
 						          <img src="img/mascota6.jpg" alt="image6"/>
-						          <div class="bottomleft">Gatito</br>Edad: 10 meses, Sexo: Macho, Raza: Siames</br>Descripcion: Es desconfiado y miedoso. Tener cuidado.</div>
+						          <span class="bottomleft">Gatito<br>Edad: 10 meses, Sexo: Macho, Raza: Siames<br>Descripcion: Es desconfiado y miedoso. Tener cuidado.</span>
 						        </label>
 						      </figure>
 
 						      <figure>
 						        <label for="fullscreen">
 						          <img src="img/mascota7.jpg" alt="image7"/>
-						          <div class="bottomleft">Nini</br>Edad: 2 años, Sexo: Hembra, Raza: Mezcla con schnauzer</br>Descripcion: Muy d&oacutecil y juguet&oacuten.</div>
+						          <span class="bottomleft">Nini<br>Edad: 2 años, Sexo: Hembra, Raza: Mezcla con schnauzer<br>Descripcion: Muy juguetona.</span>
 						        </label>
 						      </figure>
 
 						      <figure>
 						        <label for="fullscreen">
 						          <img src="img/mascota8.jpg" alt="image8"/>
-						          <div class="bottomleft">Matt</br>Edad: 2 años, Sexo: Macho, Raza: Siames</br>Descripcion: Pelaje negro.</div>
+						          <span class="bottomleft">Matt<br>Edad: 2 años, Sexo: Macho, Raza: Siames<br>Descripcion: Pelaje negro.</span>
 						        </label>
 						      </figure>
 						    </div>
 						    
 						    <div class="thumbnails">						      
 						 						      
-						      <label for="image1" class="thumb" style="background-image: url('img/mascota1.jpeg')"><div class="desc">Batman</br>Raza: Schnauzer</div></label>
+						      <label for="image1" class="thumb" style="background-image: url('img/mascota1.jpeg')"><span class="desc">Batman<br>Raza: Schnauzer</span></label>
 						      
-						      <label for="image2" class="thumb" style="background-image: url('img/mascota2.jpg')"><div class="desc">Manchas</br>Raza: Dalmata</div></label>
+						      <label for="image2" class="thumb" style="background-image: url('img/mascota2.jpg')"><span class="desc">Manchas<br>Raza: Dalmata</span></label>
 						      
-						      <label for="image3" class="thumb" style="background-image: url('img/mascota3.jpg')"><div class="desc">Rodolfo</br>Raza: Mestizo<</div></label>
+						      <label for="image3" class="thumb" style="background-image: url('img/mascota3.jpg')"><span class="desc">Rodolfo<br>Raza: Mestizo</span></label>
 						        
-						      <label for="image4" class="thumb" style="background-image: url('img/mascota4.jpg')"><div class="desc">Chimuela</br>Raza: Mestiza</div></label>
+						      <label for="image4" class="thumb" style="background-image: url('img/mascota4.jpg')"><span class="desc">Chimuela<br>Raza: Mestiza</span></label>
 
-						      <label for="image5" class="thumb" style="background-image: url('img/mascota5.jpg')"><div class="desc">Trini</br>Raza: Mestiza</div></label>
+						      <label for="image5" class="thumb" style="background-image: url('img/mascota5.jpg')"><span class="desc">Trini<br>Raza: Mestiza</span></label>
 						      
-						      <label for="image6" class="thumb" style="background-image: url('img/mascota6.jpg')"><div class="desc">Gatito</br>Raza: Siames</div></label>
+						      <label for="image6" class="thumb" style="background-image: url('img/mascota6.jpg')"><span class="desc">Gatito<br>Raza: Siames</span></label>
 						      
-						      <label for="image7" class="thumb" style="background-image: url('img/mascota7.jpg')"><div class="desc">Nini</br>Raza:Schnauzer</div></label>
+						      <label for="image7" class="thumb" style="background-image: url('img/mascota7.jpg')"><span class="desc">Nini<br>Raza:Schnauzer</span></label>
 						        
-						      <label for="image8" class="thumb" style="background-image: url('img/mascota8.jpg')"><div class="desc">Matt</br>Raza: Siames</div></label>
+						      <label for="image8" class="thumb" style="background-image: url('img/mascota8.jpg')"><span class="desc">Matt<br>Raza: Siames</span></label>
 						    </div>
 						  </div>
-					</section>
+					</div>
 				</div>	
 
 				<!-- Estadísticas-->

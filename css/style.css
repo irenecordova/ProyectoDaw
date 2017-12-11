@@ -134,14 +134,14 @@ h4{
 	font-family: 'Pacifico', cursive;
 }
 
-#texto1, #acercaDe p {
+.texto1, #acercaDe p {
 	font-family: 'Boogaloo', cursive;
 	text-align:center;
 	font-size: 1.2rem;
 	padding-top: 5%;
 }
 
-#texto2 {
+.texto2 {
 	font-family: 'Boogaloo', cursive;
 	color: #FFFFFF;
 	padding-left: 10%;
@@ -171,7 +171,7 @@ h4{
 	padding-top: 5%;
 }
 
-#panel{
+.panel{
 	padding-left: 8%;
 	padding-right: 8%;
 	margin-right: 0%;
@@ -230,7 +230,7 @@ footer{
 	height: 100%;
 }
 
-#introduccion{
+.introduccion{
 	font-family: 'Boogaloo', cursive;
 	color: #D53030;
 	font-size: 2rem;
@@ -286,7 +286,7 @@ footer{
 	margin-top: 5%;
 	}
 
-	#pasos{
+	.pasos{
 	margin-top: 5%;
 	padding: .5rem;
 	border: .1rem solid #d4d4d4;
@@ -294,7 +294,7 @@ footer{
 	}
 }
 
-#pasos{
+.pasos{
 	margin: 1.3%;
 	padding: .5rem;
 	border: .1rem solid #d4d4d4;
@@ -305,19 +305,19 @@ footer{
 	margin-top: 5%;
 }
 
-#img1, #img2, #img3{
+.img1, .img2, .img3{
 	width: 8rem; 
 	height: 8rem;
 }
 
-#img4, #img6{
+.img4, .img6{
 	width: 15rem;
 	height: 17rem;
 	margin-top: 3%;
 	border-radius: 3%;
 }
 
-#img5{
+.img5{
 	width: 11rem;
 }
 
