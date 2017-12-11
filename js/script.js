@@ -1,5 +1,7 @@
 var http_request = false;
 var respuesta = false;
+var latitud = -2.157813;
+var longitud = -79.922417;
 
 
 function makeRequest(url) {
@@ -38,7 +40,7 @@ function myMap() {
             respuesta = JSON.parse(http_request.response);
             console.log(respuesta);
 
-            var myCenter = new google.maps.LatLng(-2.157813, -79.922417);
+            var myCenter = new google.maps.LatLng(latitud, longitud);
             var mapCanvas = document.getElementById("googleMap");
             var mapOptions = {center: myCenter, zoom: 12};
             var map = new google.maps.Map(mapCanvas, mapOptions);
@@ -109,10 +111,25 @@ function myMap() {
     }
 }
 
-window.onload = function() {
-  makeRequest('data/animales.json');
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        alert("Geolocation is not supported by this browser.");
+    }
+}
 
-  document.getElementById("nav-mapa-tab").addEventListener("click", function(){
-    makeRequest('data/animales.json');
-  });
+function showPosition(position) {
+    latitud = parseFloat(position.coords.latitude);
+    longitud = parseFloat(position.coords.longitude);
+}
+
+window.onload = function() {
+	getLocation();
+	
+	makeRequest('data/animales.json');
+
+	document.getElementById("nav-mapa-tab").addEventListener("click", function(){
+		makeRequest('data/animales.json');
+	});
 }
